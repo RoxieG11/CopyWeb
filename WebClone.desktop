@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WebClone Pro
+GenericName=Web Sitesi Kopyalama ve İstihbarat Aracı
+Comment=Web sitelerinin HTML, CSS, JS, resim ve fontlarını yerel klasöre kopyalar
+Exec=python3 gui.py
+Icon=webclone
+Terminal=false
+Categories=Development;WebDevelopment;Utility;Network;
+StartupNotify=true

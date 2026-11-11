@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webclone"
+version = "2.0.0"
+authors = [
+  { name="WebClone Team" },
+]
+description = "Yüksek hızlı, anonim ve istihbarat destekli modern web sitesi kopyalama aracı."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "requests>=2.28.0",
+    "urllib3>=1.26.0",
+    "PyQt6>=6.4.0",
+    "PySocks>=1.7.1",
+]
+
+[project.optional-dependencies]
+browser = ["PyQt6-WebEngine>=6.4.0"]
+
+[project.scripts]
+webclone = "webclone.cli:main"
+webclone-gui = "webclone.gui:launch_gui"
